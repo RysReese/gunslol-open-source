@@ -669,3 +669,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   typeWriterStart();
 });
+const cursor = document.querySelector('.custom-cursor');
+
+document.addEventListener('mousemove', (e) => {
+    // This moves the custom div to your mouse coordinates
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+});
