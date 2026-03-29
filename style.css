@@ -781,10 +781,5 @@ body.car-theme {
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-  
-  /* The Fixes */
-  filter: blur(10px);
-  -webkit-filter: blur(10px); /* For Safari/Chrome */
-  transform: translateZ(0);   /* Forces hardware acceleration */
+  filter: blur(10px) brightness(0.8);
 }
-
