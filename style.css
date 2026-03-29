@@ -786,8 +786,22 @@ body.car-theme {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -2;
-  
+  z-index: -2; /* Pushes the video to the very bottom layer */
+}
+
+#blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: -1; /* Sits on top of the video, but UNDER your profile card */
+  pointer-events: none;
+}
+
   filter: blur(10px) brightness(0.6);
   -webkit-filter: blur(10px) brightness(0.6);
   
