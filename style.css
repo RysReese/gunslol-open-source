@@ -23,17 +23,23 @@ body {
 }
 
 
-.custom-cursor {
-  position: fixed;
-  width: 32px;
-  height: 32px;
-  background: url('wlwmomentdamn.png') no-repeat center center;
-  background-size: contain;
-  pointer-events: none;
-  z-index: 10000;
-  transition: transform 0.1s ease-out;
-  filter: hue-rotate(var(--cursor-hue, 0deg)); 
+* {
+    cursor: none !important;
 }
+
+.custom-cursor {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    background: url('wlwmomentdamn.png') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 999999 !important; 
+    transition: transform 0.1s ease-out;
+    transform: translate(-50%, -50%); 
+}
+
+
 
 
 body.home-theme {
