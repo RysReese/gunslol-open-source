@@ -780,9 +780,19 @@ body.car-theme {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1;
-  
-  filter: blur(15px);
-  -webkit-filter: blur(15px);
-  transform: scale(1.1);
+  z-index: -2; /* Pushed further back */
+}
+
+/* This is the new "Blur Layer" */
+#blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.2); /* Darkens it slightly to make text pop */
+  z-index: -1; /* Sits between the video and the card */
+  pointer-events: none;
 }
