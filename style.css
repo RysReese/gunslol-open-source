@@ -33,11 +33,11 @@ body {
     height: 32px;
     background: url('wlwmomentdamn.png') no-repeat center center;
     background-size: contain;
-    pointer-events: none;
     z-index: 999999 !important; 
-    transition: transform 0.1s ease-out;
+    pointer-events: none;
     transform: translate(-50%, -50%); 
 }
+
 
 
 
