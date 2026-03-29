@@ -773,3 +773,12 @@ body.car-theme {
     clip: rect(65px, 9999px, 45px, 0);
   }
 }
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
