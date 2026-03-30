@@ -822,8 +822,8 @@ body.car-theme {
     left: 0 !important;
     
     /* Manually nudge them. Change these numbers to move them: */
-    margin-top: -20px !important;  /* Move UP (more negative) or DOWN (less) */
-    margin-left: -25px !important; /* Move LEFT (more negative) or RIGHT (less) */
+    margin-top: -70px !important;  /* Move UP (more negative) or DOWN (less) */
+    margin-left: -65px !important; /* Move LEFT (more negative) or RIGHT (less) */
     
     width: 150px !important;  /* Set a fixed size so they don't vanish */
     height: 150px !important;
