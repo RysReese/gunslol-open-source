@@ -809,18 +809,19 @@ body.car-theme {
 }
 .avatar-wrapper {
     position: relative;
-    display: inline-block;
-    width: 85px; 
-    height: 85px;
+    display: inline-block; /* Keeps it in line with your name */
+    width: 80px;  /* Change this to match your PFP's actual width */
+    height: 80px; /* Change this to match your PFP's actual height */
     vertical-align: middle;
 }
 
 #wings-id {
     position: absolute !important;
-    top: -70% !important;  
-    left: -20% !important;  
-    width: 150% !important; 
-    height: 150% !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important; /* This is the ONLY way to perfectly center them */
+    width: 180% !important; /* Makes wings larger than the 80px box */
+    height: 180% !important;
     pointer-events: none;
     z-index: 2;
 }
