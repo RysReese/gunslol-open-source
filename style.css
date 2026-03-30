@@ -820,10 +820,16 @@ body.car-theme {
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    width: 350px !important;
+    width: 400px !important; /* Adjust this for the wings' size */
     height: auto !important;
-    z-index: 9999 !important;
+    z-index: 99999 !important; /* Higher than everything else */
     pointer-events: none !important;
+    
+    /* Forces visibility */
     opacity: 1 !important;
+    visibility: visible !important;
     display: block !important;
+    
+    /* Anti-drag fix: ensures it's always "on" */
+    filter: none !important;
 }
