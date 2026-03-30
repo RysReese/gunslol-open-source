@@ -815,21 +815,22 @@ body.car-theme {
     vertical-align: middle;
 }
 
-#wings-id {
+.wings-container {
     position: fixed !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 400px !important; /* Adjust this for the wings' size */
-    height: auto !important;
-    z-index: 99999 !important; /* Higher than everything else */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 99999 !important;
     pointer-events: none !important;
-    
-    /* Forces visibility */
+}
+
+#wings-id {
+    width: 450px !important; 
+    height: auto !important;
     opacity: 1 !important;
     visibility: visible !important;
-    display: block !important;
-    
-    /* Anti-drag fix: ensures it's always "on" */
-    filter: none !important;
 }
