@@ -809,17 +809,19 @@ body.car-theme {
 }
 .avatar-wrapper {
     position: relative;
-    width: 150px; 
-    height: 150px;
-    margin: 0 auto;
+    width: 80px;  
+    height: 80px; 
+    margin-right: 15px; 
+    display: inline-block; 
+    vertical-align: middle;
 }
 
 .wings-decoration {
     position: absolute;
-    top: -12%; 
-    left: -12%;
-    width: 124%; 
-    height: 124%;
+    top: -25%;  
+    left: -25%;
+    width: 150%; 
+    height: 150%;
     pointer-events: none;
-    z-index: 2; 
+    z-index: 2;
 }
