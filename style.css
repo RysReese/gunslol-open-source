@@ -820,9 +820,11 @@ body.car-theme {
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    object-fit: contain;
-    pointer-events: none;
-    z-index: 9999;
+    width: 300px !important; 
+    height: auto !important;
+    z-index: 9999 !important;
+    pointer-events: none !important;
+    display: block !important;
+    opacity: 1 !important;
 }
+
