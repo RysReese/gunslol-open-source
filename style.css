@@ -817,10 +817,12 @@ body.car-theme {
 
 #wings-id {
     position: absolute !important;
+    /* We use 50% to start at the center of the PFP */
     top: 50% !important;
     left: 50% !important;
-    transform: translate(-50%, -50%) !important; /* This is the ONLY way to perfectly center them */
-    width: 180% !important; /* Makes wings larger than the 80px box */
+    /* This moves the wings' OWN center onto that 50% point */
+    transform: translate(-50%, -50%) !important; 
+    width: 180% !important; 
     height: 180% !important;
     pointer-events: none;
     z-index: 2;
