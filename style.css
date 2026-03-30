@@ -820,8 +820,8 @@ body.car-theme {
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important; 
-    width: 180% !important;
-    height: 180% !important;
+    width: 170% !important; 
+    height: 170% !important;
     pointer-events: none;
     z-index: 2;
 }
