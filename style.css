@@ -786,7 +786,7 @@ body.car-theme {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -2; /* Pushes the video to the very bottom layer */
+  z-index: -2;
 }
 
 #blur-overlay {
@@ -798,7 +798,7 @@ body.car-theme {
   background: rgba(0, 0, 0, 0.4); 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  z-index: -1; /* Sits on top of the video, but UNDER your profile card */
+  z-index: -1; 
   pointer-events: none;
 }
 
@@ -806,4 +806,20 @@ body.car-theme {
   -webkit-filter: blur(10px) brightness(0.6);
   
   transform: scale(1.1); 
+}
+.avatar-wrapper {
+    position: relative;
+    width: 150px; 
+    height: 150px;
+    margin: 0 auto;
+}
+
+.wings-decoration {
+    position: absolute;
+    top: -12%; 
+    left: -12%;
+    width: 124%; 
+    height: 124%;
+    pointer-events: none;
+    z-index: 2; 
 }
