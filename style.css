@@ -816,12 +816,13 @@ body.car-theme {
 }
 
 #wings-id {
-    position: absolute !important;
+    position: fixed !important;
     top: 50% !important;
     left: 50% !important;
-    transform: translate(-50%, -50%) !important; 
-    width: 170% !important; 
-    height: 170% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: contain;
     pointer-events: none;
-    z-index: 2;
+    z-index: 9999;
 }
