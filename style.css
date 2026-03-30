@@ -817,11 +817,10 @@ body.car-theme {
 
 .wings-decoration {
     position: absolute;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important; 
-    width: 180% !important; 
-    height: 180% !important;
+    top: -25%;  
+    left: -20%; 
+    width: 160%; 
+    height: 160%;
     pointer-events: none;
     z-index: 2;
 }
