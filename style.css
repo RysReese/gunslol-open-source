@@ -817,13 +817,16 @@ body.car-theme {
 
 #wings-id {
     position: absolute !important;
-    /* We use 50% to start at the center of the PFP */
-    top: 50% !important;
-    left: 50% !important;
-    /* This moves the wings' OWN center onto that 50% point */
-    transform: translate(-50%, -50%) !important; 
-    width: 180% !important; 
-    height: 180% !important;
+    /* Reset these to 0 to start fresh */
+    top: 0 !important;
+    left: 0 !important;
+    
+    /* Manually nudge them. Change these numbers to move them: */
+    margin-top: -20px !important;  /* Move UP (more negative) or DOWN (less) */
+    margin-left: -25px !important; /* Move LEFT (more negative) or RIGHT (less) */
+    
+    width: 150px !important;  /* Set a fixed size so they don't vanish */
+    height: 150px !important;
     pointer-events: none;
-    z-index: 2;
+    z-index: 5;
 }
